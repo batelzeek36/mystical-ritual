@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navigation from './components/Navigation'
 import CallItInPanel from './components/CallItInPanel'

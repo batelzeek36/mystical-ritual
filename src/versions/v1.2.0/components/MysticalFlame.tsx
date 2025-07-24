@@ -20,7 +20,7 @@ interface Particle {
 
 const MysticalFlame: React.FC<MysticalFlameProps> = ({ isActive, onComplete }) => {
   const [particles, setParticles] = useState<Particle[]>([])
-  const [animationId, setAnimationId] = useState<number | null>(null)
+  const [,] = useState<number | null>(null)
 
   const colors = [
     '#FF6B35', // Orange-red

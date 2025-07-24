@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import VersionSwitcher from './components/VersionSwitcher'
 import { getActiveVersion, AppVersion } from './versions'

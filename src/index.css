@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-mystical-dark text-mystical-silver font-cinzel;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+    min-height: 100vh;
+  }
+  
+  * {
+    @apply border-mystical-purple/20;
+  }
+}
+
+@layer components {
+  .mystical-card {
+    @apply bg-gradient-to-br from-mystical-purple/20 to-mystical-dark/80 
+           border border-mystical-glow/30 rounded-lg p-6 
+           backdrop-blur-sm shadow-lg;
+  }
+  
+  .mystical-button {
+    @apply bg-gradient-to-r from-mystical-purple to-mystical-glow 
+           text-white font-cinzel-decorative font-bold py-3 px-6 
+           rounded-lg border border-mystical-glow/50 
+           hover:shadow-lg hover:shadow-mystical-glow/25 
+           transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .mystical-input {
+    @apply bg-mystical-dark/50 border border-mystical-glow/30 
+           rounded-lg px-4 py-3 text-mystical-silver 
+           placeholder-mystical-silver/50 
+           focus:border-mystical-glow focus:ring-2 focus:ring-mystical-glow/20 
+           focus:outline-none transition-all duration-300;
+  }
+  
+  .floating-card {
+    @apply animate-float;
+  }
+  
+  .glowing-text {
+    @apply text-mystical-glow animate-glow;
+    text-shadow: 0 0 10px currentColor;
+  }
+  
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+}
